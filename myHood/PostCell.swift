@@ -16,12 +16,10 @@ class PostCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
+        
+        postImg.layer.cornerRadius = 15.0
+        postImg.clipsToBounds = true
         // Initialization code
-    }
-
-    // done by XCode
-    override func setSelected(selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
     }
     
     func configureCell(post: Post) {
