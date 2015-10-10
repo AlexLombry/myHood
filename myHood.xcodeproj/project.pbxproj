@@ -14,6 +14,7 @@
 		FAB2CB7B1BC9AC24006F5C8D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAB2CB791BC9AC24006F5C8D /* LaunchScreen.storyboard */; };
 		FAB2CB841BC9AC45006F5C8D /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB2CB831BC9AC45006F5C8D /* Post.swift */; settings = {ASSET_TAGS = (); }; };
 		FAB2CB871BC9BB1F006F5C8D /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB2CB861BC9BB1F006F5C8D /* PostCell.swift */; settings = {ASSET_TAGS = (); }; };
+		FAB2CB8A1BC9C0AA006F5C8D /* AddPostVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB2CB891BC9C0AA006F5C8D /* AddPostVC.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		FAB2CB7C1BC9AC24006F5C8D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FAB2CB831BC9AC45006F5C8D /* Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		FAB2CB861BC9BB1F006F5C8D /* PostCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
+		FAB2CB891BC9C0AA006F5C8D /* AddPostVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddPostVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,13 +60,11 @@
 		FAB2CB6F1BC9AC24006F5C8D /* myHood */ = {
 			isa = PBXGroup;
 			children = (
+				FAB2CB881BC9C049006F5C8D /* Controller */,
 				FAB2CB851BC9BAEE006F5C8D /* View */,
 				FAB2CB821BC9AC35006F5C8D /* Model */,
 				FAB2CB701BC9AC24006F5C8D /* AppDelegate.swift */,
-				FAB2CB721BC9AC24006F5C8D /* ViewController.swift */,
-				FAB2CB741BC9AC24006F5C8D /* Main.storyboard */,
 				FAB2CB771BC9AC24006F5C8D /* Assets.xcassets */,
-				FAB2CB791BC9AC24006F5C8D /* LaunchScreen.storyboard */,
 				FAB2CB7C1BC9AC24006F5C8D /* Info.plist */,
 			);
 			path = myHood;
@@ -81,9 +81,20 @@
 		FAB2CB851BC9BAEE006F5C8D /* View */ = {
 			isa = PBXGroup;
 			children = (
+				FAB2CB791BC9AC24006F5C8D /* LaunchScreen.storyboard */,
+				FAB2CB741BC9AC24006F5C8D /* Main.storyboard */,
 				FAB2CB861BC9BB1F006F5C8D /* PostCell.swift */,
 			);
 			name = View;
+			sourceTree = "<group>";
+		};
+		FAB2CB881BC9C049006F5C8D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				FAB2CB721BC9AC24006F5C8D /* ViewController.swift */,
+				FAB2CB891BC9C0AA006F5C8D /* AddPostVC.swift */,
+			);
+			name = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -159,6 +170,7 @@
 			files = (
 				FAB2CB841BC9AC45006F5C8D /* Post.swift in Sources */,
 				FAB2CB731BC9AC24006F5C8D /* ViewController.swift in Sources */,
+				FAB2CB8A1BC9C0AA006F5C8D /* AddPostVC.swift in Sources */,
 				FAB2CB711BC9AC24006F5C8D /* AppDelegate.swift in Sources */,
 				FAB2CB871BC9BB1F006F5C8D /* PostCell.swift in Sources */,
 			);
