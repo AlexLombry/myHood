@@ -19,12 +19,20 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mxv-aD-mKd">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="70"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="logo1" translatesAutoresizingMaskIntoConstraints="NO" id="QF9-nF-eMr">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="logo1" translatesAutoresizingMaskIntoConstraints="NO" id="QF9-nF-eMr">
                                         <rect key="frame" x="540" y="20" width="52" height="50"/>
                                         <animations/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="52" id="drf-s6-eP1"/>
                                             <constraint firstAttribute="height" constant="50" id="pll-EN-oe1"/>
+                                        </constraints>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="superman" translatesAutoresizingMaskIntoConstraints="NO" id="kcx-Cv-hSf">
+                                        <rect key="frame" x="180" y="8" width="240" height="54"/>
+                                        <animations/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="240" id="P7g-gd-Fd8"/>
+                                            <constraint firstAttribute="height" constant="54" id="pel-bE-1qy"/>
                                         </constraints>
                                     </imageView>
                                 </subviews>
@@ -33,6 +41,8 @@
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="QF9-nF-eMr" secondAttribute="trailing" constant="12" id="02l-3d-5iR"/>
                                     <constraint firstAttribute="height" constant="70" id="4hQ-qn-8wK"/>
+                                    <constraint firstAttribute="bottom" secondItem="kcx-Cv-hSf" secondAttribute="bottom" constant="8" id="QTC-aS-n1g"/>
+                                    <constraint firstItem="kcx-Cv-hSf" firstAttribute="centerX" secondItem="mxv-aD-mKd" secondAttribute="centerX" id="TnU-zO-FFz"/>
                                     <constraint firstItem="QF9-nF-eMr" firstAttribute="top" secondItem="mxv-aD-mKd" secondAttribute="top" constant="12" id="oVH-PI-zvj"/>
                                 </constraints>
                             </view>
@@ -62,5 +72,6 @@
     </scenes>
     <resources>
         <image name="logo1" width="256" height="256"/>
+        <image name="superman" width="916" height="419"/>
     </resources>
 </document>
