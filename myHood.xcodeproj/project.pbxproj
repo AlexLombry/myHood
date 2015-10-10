@@ -13,6 +13,7 @@
 		FAB2CB781BC9AC24006F5C8D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAB2CB771BC9AC24006F5C8D /* Assets.xcassets */; };
 		FAB2CB7B1BC9AC24006F5C8D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAB2CB791BC9AC24006F5C8D /* LaunchScreen.storyboard */; };
 		FAB2CB841BC9AC45006F5C8D /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB2CB831BC9AC45006F5C8D /* Post.swift */; settings = {ASSET_TAGS = (); }; };
+		FAB2CB871BC9BB1F006F5C8D /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB2CB861BC9BB1F006F5C8D /* PostCell.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		FAB2CB7A1BC9AC24006F5C8D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FAB2CB7C1BC9AC24006F5C8D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FAB2CB831BC9AC45006F5C8D /* Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		FAB2CB861BC9BB1F006F5C8D /* PostCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 		FAB2CB6F1BC9AC24006F5C8D /* myHood */ = {
 			isa = PBXGroup;
 			children = (
+				FAB2CB851BC9BAEE006F5C8D /* View */,
 				FAB2CB821BC9AC35006F5C8D /* Model */,
 				FAB2CB701BC9AC24006F5C8D /* AppDelegate.swift */,
 				FAB2CB721BC9AC24006F5C8D /* ViewController.swift */,
@@ -73,6 +76,14 @@
 				FAB2CB831BC9AC45006F5C8D /* Post.swift */,
 			);
 			name = Model;
+			sourceTree = "<group>";
+		};
+		FAB2CB851BC9BAEE006F5C8D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FAB2CB861BC9BB1F006F5C8D /* PostCell.swift */,
+			);
+			name = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -149,6 +160,7 @@
 				FAB2CB841BC9AC45006F5C8D /* Post.swift in Sources */,
 				FAB2CB731BC9AC24006F5C8D /* ViewController.swift in Sources */,
 				FAB2CB711BC9AC24006F5C8D /* AppDelegate.swift in Sources */,
+				FAB2CB871BC9BB1F006F5C8D /* PostCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
