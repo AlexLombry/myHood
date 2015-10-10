@@ -29,13 +29,21 @@
                                         </constraints>
                                     </imageView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dPd-d7-aRf">
-                                        <rect key="frame" x="520" y="11" width="72" height="59"/>
+                                        <rect key="frame" x="542" y="11" width="50" height="50"/>
                                         <animations/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="72" id="Gcu-yu-set"/>
-                                            <constraint firstAttribute="height" constant="59" id="SKM-tY-YvF"/>
+                                            <constraint firstAttribute="width" constant="50" id="Gcu-yu-set"/>
+                                            <constraint firstAttribute="height" constant="50" id="SKM-tY-YvF"/>
+                                            <constraint firstAttribute="height" constant="50" id="lER-Dm-XkJ"/>
+                                            <constraint firstAttribute="width" constant="50" id="nHZ-yv-r1c"/>
                                         </constraints>
-                                        <state key="normal" title="Button" image="logo1"/>
+                                        <state key="normal" image="camera"/>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="Gcu-yu-set"/>
+                                                <exclude reference="SKM-tY-YvF"/>
+                                            </mask>
+                                        </variation>
                                         <connections>
                                             <segue destination="kCO-Np-MoR" kind="show" id="AGr-Iv-Bff"/>
                                         </connections>
@@ -45,12 +53,22 @@
                                 <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="70" id="4hQ-qn-8wK"/>
+                                    <constraint firstAttribute="trailing" secondItem="dPd-d7-aRf" secondAttribute="trailing" constant="8" id="8rB-C8-co0"/>
                                     <constraint firstItem="dPd-d7-aRf" firstAttribute="top" secondItem="mxv-aD-mKd" secondAttribute="top" constant="11" id="KbS-VV-Js0"/>
                                     <constraint firstAttribute="bottom" secondItem="kcx-Cv-hSf" secondAttribute="bottom" constant="8" id="QTC-aS-n1g"/>
                                     <constraint firstItem="kcx-Cv-hSf" firstAttribute="centerX" secondItem="mxv-aD-mKd" secondAttribute="centerX" id="TnU-zO-FFz"/>
+                                    <constraint firstItem="dPd-d7-aRf" firstAttribute="top" secondItem="mxv-aD-mKd" secondAttribute="top" constant="11" id="VZh-A5-7GP"/>
                                     <constraint firstAttribute="bottom" secondItem="dPd-d7-aRf" secondAttribute="bottom" id="gGY-MJ-f7D"/>
                                     <constraint firstAttribute="trailing" secondItem="dPd-d7-aRf" secondAttribute="trailing" constant="8" id="kcm-uj-duX"/>
+                                    <constraint firstAttribute="bottom" secondItem="dPd-d7-aRf" secondAttribute="bottom" constant="9" id="pxL-04-9wv"/>
                                 </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="KbS-VV-Js0"/>
+                                        <exclude reference="gGY-MJ-f7D"/>
+                                        <exclude reference="kcm-uj-duX"/>
+                                    </mask>
+                                </variation>
                             </view>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="85" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="OQW-HG-Cas">
                                 <rect key="frame" x="20" y="91" width="560" height="489"/>
@@ -359,8 +377,8 @@
         </scene>
     </scenes>
     <resources>
+        <image name="camera" width="600" height="597"/>
         <image name="example" width="2560" height="1536"/>
-        <image name="logo1" width="256" height="256"/>
         <image name="superman" width="916" height="419"/>
     </resources>
 </document>
