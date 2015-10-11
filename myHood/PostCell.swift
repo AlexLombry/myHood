@@ -26,8 +26,7 @@ class PostCell: UITableViewCell {
         // Set the label
         titleLabel.text = post.title
         descLabel.text = post.pDescription
-        
-        // 
+        postImg.image = DataService.singleton.imageForPath(post.imagePath)
     }
 
 }

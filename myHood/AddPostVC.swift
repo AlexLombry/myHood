@@ -28,8 +28,6 @@ class AddPostVC: UIViewController, UIImagePickerControllerDelegate, UINavigation
         // Load picker
         imgPicker = UIImagePickerController()
         imgPicker.delegate = self
-        
-        
     }
     
     @IBAction func addPicBtnPressed(sender: UIButton!) {
@@ -41,9 +39,15 @@ class AddPostVC: UIViewController, UIImagePickerControllerDelegate, UINavigation
         
         // Let's make sure we got all data
         if let title = titleField.text, let desc = descriptionField.text, let img = postImage.image {
+
+            let imgPath = DataService.singleton.saveImageAndCreatePath(img)
+            let post = Post(imagePath: imgPath, title: title, description: desc)
             
-        } else {
+            // Creating the post
+            DataService.singleton.addPost(post)
             
+            // Close the VC and return to main
+            dismissViewControllerAnimated(true, completion: nil)
         }
         
     }
