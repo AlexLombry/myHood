@@ -15,20 +15,8 @@
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg" translatesAutoresizingMaskIntoConstraints="NO" id="AzN-El-Hxr">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                                <animations/>
-                            </imageView>
-                        </subviews>
                         <animations/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="AzN-El-Hxr" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="9t7-9c-AUq"/>
-                            <constraint firstAttribute="trailing" secondItem="AzN-El-Hxr" secondAttribute="trailing" id="JHm-ks-biE"/>
-                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="AzN-El-Hxr" secondAttribute="bottom" id="QIj-1F-4yT"/>
-                            <constraint firstItem="AzN-El-Hxr" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="zSm-Fy-waw"/>
-                        </constraints>
+                        <color key="backgroundColor" red="0.16264681208053691" green="0.66296891444630712" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -36,7 +24,4 @@
             <point key="canvasLocation" x="53" y="375"/>
         </scene>
     </scenes>
-    <resources>
-        <image name="bg" width="724" height="1024"/>
-    </resources>
 </document>

@@ -30,16 +30,25 @@ class AddPostVC: UIViewController, UIImagePickerControllerDelegate, UINavigation
         imgPicker.delegate = self
     }
     
+    // User click on the +Add Pic Button
+    // We present the imgPicker view (iPhone system to show a special view to choose your picture)
     @IBAction func addPicBtnPressed(sender: UIButton!) {
         sender.setTitle("", forState: .Normal)
         presentViewController(imgPicker, animated: true, completion: nil)
     }
     
+    // User click on the Make Post Button
+    // We first check if we have all data : img, title, description
+    
+    // if so we create the path for the image and save the image itself
+    // then we create an instance of Post with the 3 data
+    // and we save it into userdefaults
+    // We dismiss the VC to return back into the list of Post
     @IBAction func makePostBtnPressed(sender: AnyObject) {
         
         // Let's make sure we got all data
         if let title = titleField.text, let desc = descriptionField.text, let img = postImage.image {
-
+            
             let imgPath = DataService.singleton.saveImageAndCreatePath(img)
             let post = Post(imagePath: imgPath, title: title, description: desc)
             
@@ -52,11 +61,13 @@ class AddPostVC: UIViewController, UIImagePickerControllerDelegate, UINavigation
         
     }
 
+    // Just return to previous page
     @IBAction func cancelBtnPressed(sender: AnyObject) {
         dismissViewControllerAnimated(true, completion: nil)
     }
 
-    // Automaticly call by delegate, set the image into postImage
+    // Automaticly call by delegate, set the image 
+    // choosed by the user into postImage uiimageview
     func imagePickerController(picker: UIImagePickerController, didFinishPickingImage image: UIImage, editingInfo: [String : AnyObject]?) {
         imgPicker.dismissViewControllerAnimated(true, completion: nil)
         postImage.image = image
